@@ -35,7 +35,6 @@ class StepsActivity : AppCompatActivity() , ViewToPresenter {
         )
     }
 
-    private var textTitle: TextView? = null
     private var textCount: TextView? = null
     private var textCal: TextView? = null
     private var textKm: TextView? = null
@@ -88,14 +87,13 @@ class StepsActivity : AppCompatActivity() , ViewToPresenter {
 
     override fun requestInitializeViews() {
         this.runOnUiThread{
-            textTitle = stepCount_textView_goal
             textCount = stepCount_textView_count
             textCal = stepCount_textView_cal
             textKm = stepCount_textView_km
             buttonStart = stepCount_button_btn_start
             graph = stepCount_dynamicArcView_graph
             presenter.didFinishInitializeViews()
-            buttonStart?.setBackgroundColor(ContextCompat.getColor(this, R.color.colorGreen))
+            buttonStart?.setBackgroundColor(ContextCompat.getColor(this, R.color.colorBlue))
             buttonStart?.text = "Iniciar"
         }
     }
@@ -108,7 +106,7 @@ class StepsActivity : AppCompatActivity() , ViewToPresenter {
             }
 
             if(!running){
-                buttonStart?.setBackgroundColor(ContextCompat.getColor(this, R.color.colorGreen))
+                buttonStart?.setBackgroundColor(ContextCompat.getColor(this, R.color.colorBlue))
                 buttonStart?.text = "Iniciar"
             }
         }
@@ -126,7 +124,7 @@ class StepsActivity : AppCompatActivity() , ViewToPresenter {
     override fun requestRenderGraphDefault() {
         this.runOnUiThread {
             backgroundGraph = SeriesItem.Builder(ContextCompat.getColor(this,
-                R.color.colorAccent))
+                R.color.colorGray))
                 .setRange(
                     0f,
                     TARGET,

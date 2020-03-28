@@ -97,7 +97,7 @@ class PresenterSteps(
     }
 
     private fun requestUpdateGraph(steps: Int) {
-        view.updateRangeBlue(steps)
+        view.updateRangeRed(steps)
     }
 
     override fun didFetchCalcs(cal: String, km: String) {

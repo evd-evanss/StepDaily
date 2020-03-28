@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="dimens_title">20sp</dimen>
-    <dimen name="dimens_calcs">18sp</dimen>
+    <dimen name="dimens_title">24sp</dimen>
+    <dimen name="dimens_calcs">20sp</dimen>
     <dimen name="dimens_count">25sp</dimen>
     <dimen name="dimen_corner_card">15dp</dimen>
 </resources>
