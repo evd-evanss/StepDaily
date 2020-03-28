@@ -1,0 +1,2 @@
+rootProject.name='Diario de Passos'
+include ':app'

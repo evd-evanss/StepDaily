@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Diario de Passos</string>
+    <string name="string_title">Diário de passos</string>
+    <string name="string_start">Iniciar</string>
+    <string name="string_stop">Parar</string>
+    <string name="string_cal">Calorias</string>
+    <string name="string_distance">Distancia</string>
+</resources>
